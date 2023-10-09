@@ -1,0 +1,19 @@
+Chat gpt
+
+function esPalindromo(cadena) {
+  // Elimina los espacios y convierte todo a minúsculas
+  cadena = cadena.replace(/ /g, '').toLowerCase();
+
+  // Compara la cadena original con su reverso
+  const cadenaReverso = cadena.split('').reverse().join('');
+
+  return cadena === cadenaReverso;
+}
+
+// Ejemplo de uso
+const palabra = "anilina";
+if (esPalindromo(palabra)) {
+  console.log(`${palabra} es un palíndromo.`);
+} else {
+  console.log(`${palabra} no es un palíndromo.`);
+}
